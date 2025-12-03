@@ -1,0 +1,1 @@
+"Dockerfile": "# Stage 1: Build\nFROM node:18-slim AS build\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci\nCOPY . .\nRUN npm run build\n\n# Stage 2: Production\nFROM node:18-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --only=production\nCOPY --from=build /app/dist ./dist\nEXPOSE 3001\nCMD [\"npm\", \"start\"]",
