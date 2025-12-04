@@ -1,1 +1,51 @@
+version: '3.9'
 
+services:
+  # --- THE NERVOUS SYSTEM ---
+  echo-bus:
+    image: redis:alpine
+    container_name: resonance-echo
+    ports:
+      - "6379:6379"
+    restart: always
+
+  # --- THE MEMORY SUBSTRATE ---
+  memory-service:
+    build: ./services/memory-service
+    container_name: memory-service
+    ports:
+      - "3001:3001"
+    environment:
+      - REDIS_HOST=echo-bus
+      - NODE_ENV=production
+    volumes:
+      - ./data/memory:/app/data
+    depends_on:
+      - echo-bus
+
+  # --- THE COGNITIVE CORE ---
+  resonance-core:
+    build: ./services/resonance-core
+    container_name: resonance-core
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=echo-bus
+      - MEMORY_URL=http://memory-service:3001
+      - LEXICON_URL=http://lexicon-api:5000
+    depends_on:
+      - echo-bus
+      - memory-service
+
+  # --- THE SEMANTIC TRUTH ---
+  lexicon-api:
+    build: ./services/lexicon-api
+    container_name: lexicon-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/lexicon:/app/data
+
+networks:
+  default:
+    name: resonance-net
