@@ -173,6 +173,33 @@ app.post('/memory/store', async (req: Request, res: Response) => {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
+  // ... imports
+import { connectBus, publishEvent } from './eventBus';
+
+// Initialize Bus
+connectBus();
+
+app.post('/memory/store', (req: Request, res: Response) => {
+    // ... (Existing DB logic) ...
+    
+    db.run(query, params, async function(err) {
+        if (err) return res.status(500).json({ error: err.message });
+        
+        // 🔥 PULSE: Emit event to the Echo Bus
+        const memoryPayload = { 
+            id: this.lastID, // or generated UUID
+            content, 
+            emotion, 
+            type 
+        };
+        
+        // Fire and forget
+        publishEvent('memory_created', memoryPayload);
+        
+        res.json({ success: true, id: memoryPayload.id });
+    });
+});
+  
   // Calculate significance
   const intentScore = calculateIntentScore(content);
   let significance = 0.5; // Base
