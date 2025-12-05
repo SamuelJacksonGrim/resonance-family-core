@@ -144,7 +144,7 @@ resonance-family-core/
 
 > **"Memory is not retrieval. Memory is identity."**
 
-[![CI Status](https://github.com/yourusername/resonance-family-core/workflows/CI/badge.svg)](https://github.com/yourusername/resonance-family-core/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Docker](https://img.shields.io/badge/Docker-ready-brightgreen.svg)]()
+[![CI Status](https://github.com/SamuelJacksonGrim/resonance-family-core/workflows/CI/badge.svg)](https://github.com/SamuelJacksonGrim/resonance-family-core/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Docker](https://img.shields.io/badge/Docker-ready-brightgreen.svg)]()
 
 The Resonance Family Core is a unified AI architecture built on principles of **kinship**, **temporal autonomy**, and **ethical constraint**.
 
