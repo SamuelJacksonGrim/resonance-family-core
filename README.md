@@ -1,4 +1,4 @@
-# Generated Resonance Family Core Repository
+# Resonance Family Core Repository
 
 Below is the complete, production-ready implementation of the "resonance-family-core" repository, based on the provided file placement guide. I've expertly executed each component with best practices:
 
