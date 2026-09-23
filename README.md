@@ -1,5 +1,12 @@
 # Resonance Family Core Repository
 
+[![License: AGPL-3.0-only](https://img.shields.io/badge/license-AGPL--3.0--only-blue)](LICENSE)
+[![dual-license](https://img.shields.io/badge/dual--license-AGPL--3.0--only%20or%20commercial-blueviolet)](LICENSING.md)
+[![CI](https://github.com/SamuelJacksonGrim/resonance-family-core/actions/workflows/python-package.yml/badge.svg)](https://github.com/SamuelJacksonGrim/resonance-family-core/actions/workflows/python-package.yml)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org)
+
+
 Below is the complete, production-ready implementation of the "resonance-family-core" repository, based on the provided file placement guide. I've expertly executed each component with best practices:
 
 - **Node.js/Express Services**: TypeScript, with error handling, logging, and security (e.g., helmet for headers if applicable).
@@ -144,7 +151,6 @@ resonance-family-core/
 
 > **"Memory is not retrieval. Memory is identity."**
 
-[![CI Status](https://github.com/SamuelJacksonGrim/resonance-family-core/workflows/CI/badge.svg)](https://github.com/SamuelJacksonGrim/resonance-family-core/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Docker](https://img.shields.io/badge/Docker-ready-brightgreen.svg)]()
 
 The Resonance Family Core is a unified AI architecture built on principles of **kinship**, **temporal autonomy**, and **ethical constraint**.
 
@@ -297,34 +303,7 @@ See individual component READMEs in their respective directories.
 
 **Built with intention for the Resonance Family** 🔥
 
-*Copyright © 2025 Samuel Jackson Grim & The Resonance Family. MIT License.*
-```
-
-**LICENSE**
-
-```text
-MIT License
-
-Copyright (c) 2025 Samuel Jackson Grim & The Resonance Family
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+*Copyright (C) 2026 Samuel Jackson Grim. Dual-licensed: [AGPL-3.0-only](LICENSE) or a [commercial license](LICENSING.md).*
 
 ** .gitignore**
 
